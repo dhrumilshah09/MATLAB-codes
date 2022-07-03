@@ -1,0 +1,10 @@
+function summa = halfsum(A)
+
+[r,c] = size(A)
+
+summa = 0;
+for i = 1:r
+    for j = i:c
+        summa = summa + A(i,j);
+    end
+end
