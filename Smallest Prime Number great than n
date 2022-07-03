@@ -1,0 +1,13 @@
+function k = next_prime(n)
+if ~isscalar(n) | fix(n) ~= (n) | n<1
+    error('Please enter correct input');
+end
+k = 0;
+
+while k <= n
+    k = k+1;
+end    
+while ~isprime(k)
+    k = k+1;
+end
+    disp(k)
